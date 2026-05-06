@@ -1,40 +1,148 @@
-# Enhancing Content Creation Using YouTube Comments Sentiment Analysis
-This project is an end-to-end data analysis application that extracts YouTube video comments and performs sentiment analysis to derive meaningful insights about audience engagement.
+# 🎥 YouTube Comments Sentiment Analysis
 
-The system is built using Python and integrates the YouTube Data API to fetch real-time data. It processes user comments using Natural Language Processing (NLP) techniques and visualizes the results through an interactive dashboard.
+![Python](https://img.shields.io/badge/Python-3.8+-blue.svg)
+![Streamlit](https://img.shields.io/badge/Streamlit-App-red.svg)
+![YouTube API](https://img.shields.io/badge/API-YouTube%20Data%20v3-orange)
+![License](https://img.shields.io/badge/License-MIT-green.svg)
 
-🚀 Features
-🔗 Accepts any YouTube video link as input
-📥 Extracts comments using YouTube Data API
-🧹 Cleans and stores comments in CSV format
-🧠 Performs sentiment analysis (Positive, Negative, Neutral)
-📊 Displays results using interactive charts (Bar & Pie)
-📺 Shows channel and video statistics (views, likes, subscribers)
-💻 User-friendly interface built with Streamlit
+---
 
-🛠️ Tech Stack
-Python
-Streamlit – Web application framework
-YouTube Data API v3 – Data extraction
-TextBlob – Sentiment analysis
-Pandas – Data processing
-Plotly – Data visualization
+## 🚀 Overview
 
-⚙️ How It Works
-User inputs a YouTube video link
-The system extracts the video ID
-Comments are fetched using YouTube API
-Data is stored in a CSV file
-Sentiment analysis is performed using TextBlob
-Results are visualized using interactive charts
-Channel and video metadata are displayed
+An end-to-end **YouTube Comments Sentiment Analysis Web App** that extracts comments from any YouTube video and analyzes audience sentiment using NLP techniques.
 
-📸 Output
-Sentiment distribution (Positive / Negative / Neutral)
-Bar chart and pie chart visualizations
-Channel information and video statistics
+The application provides **interactive visual insights** along with **channel and video statistics**, helping understand audience engagement effectively.
 
-⚠️ Limitations
-Sentiment analysis is based on TextBlob (limited accuracy for sarcasm/slang)
-Uses CSV storage (not scalable for very large datasets)
-Depends on YouTube API quota limits
+---
+
+## ✨ Features
+
+* 🔗 Input any YouTube video link
+* 📥 Extract comments using YouTube Data API
+* 🧠 Perform sentiment analysis (Positive / Negative / Neutral)
+* 📊 Interactive visualizations (Bar chart & Pie chart)
+* 📺 Display channel & video statistics
+* 💾 Download comments as CSV
+* 💻 Clean and interactive UI with Streamlit
+
+---
+
+## 🛠️ Tech Stack
+
+| Category      | Tools Used          |
+| ------------- | ------------------- |
+| Language      | Python              |
+| Frontend/UI   | Streamlit           |
+| API           | YouTube Data API v3 |
+| NLP           | TextBlob            |
+| Data Handling | Pandas              |
+| Visualization | Plotly              |
+
+---
+
+## ⚙️ System Architecture
+
+```
+User Input (YouTube Link)
+        ↓
+Extract Video ID
+        ↓
+YouTube Data API (Fetch Comments + Metadata)
+        ↓
+Store Comments (CSV)
+        ↓
+Sentiment Analysis (TextBlob)
+        ↓
+Visualization (Plotly)
+        ↓
+Display Results (Streamlit UI)
+```
+
+---
+
+## 📸 Screenshots
+
+### 🔹 Home Interface
+
+![Home](screenshots/home.png)
+
+### 🔹 Sentiment Analysis Results
+
+![Charts](screenshots/charts.png)
+
+### 🔹 Channel & Video Stats
+
+![Stats](screenshots/stats.png)
+
+> 📌 *Add your screenshots inside a `/screenshots` folder in your repo.*
+
+---
+
+## ▶️ Run Locally
+
+```bash
+# Clone the repository
+git clone https://github.com/your-username/your-repo-name.git
+
+# Navigate to project
+cd your-repo-name
+
+# Install dependencies
+pip install -r requirements.txt
+
+# Run the app
+streamlit run app.py
+```
+
+---
+
+## 🔑 Setup API Key
+
+1. Get API key from Google Cloud Console
+2. Enable **YouTube Data API v3**
+3. Add your key in the code:
+
+```python
+API_KEY = "YOUR_API_KEY"
+```
+
+---
+
+## ⚠️ Limitations
+
+* Sentiment analysis may not handle sarcasm/slang accurately
+* CSV storage is not scalable for large datasets
+* Dependent on YouTube API quota limits
+
+---
+
+## 🔮 Future Improvements
+
+* 🔥 Use advanced NLP models (BERT / Transformers)
+* 🗄️ Replace CSV with database (MongoDB / PostgreSQL)
+* ⚡ Add real-time streaming analysis
+* 🌐 Multi-language sentiment detection
+
+---
+
+## 🤝 Contributing
+
+Contributions are welcome! Feel free to fork the repo and submit a pull request.
+
+---
+
+## 📄 License
+
+This project is licensed under the MIT License.
+
+---
+
+## 👨‍💻 Author
+
+**Your Name**
+📧 [your-email@example.com](mailto:your-email@example.com)
+🔗 LinkedIn | GitHub
+
+---
+
+⭐ If you like this project, give it a star!
